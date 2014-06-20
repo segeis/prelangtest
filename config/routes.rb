@@ -1,4 +1,6 @@
 Prelangtest::Application.routes.draw do
+  resources :companies
+
   resources :stations
 
   resources :tours
