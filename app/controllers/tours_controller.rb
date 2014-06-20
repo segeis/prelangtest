@@ -29,6 +29,7 @@ class ToursController < ApplicationController
   # POST /tours.json
   def create
     @tour = Tour.new(tour_params)
+    @tour.user = current_user
 
     respond_to do |format|
       if @tour.save
