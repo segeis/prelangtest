@@ -1,4 +1,5 @@
 Prelangtest::Application.routes.draw do
+  get "static_pages/index"
   resources :companies
 
   resources :stations
